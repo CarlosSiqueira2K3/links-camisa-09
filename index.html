@@ -4,61 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camisa 9 | Links Oficiais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #8A2BE2; /* Roxo principal */
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1a1a;
+        }
+
         body {
-            background-color: #000000;
+            background: radial-gradient(circle at top, #1a1a2e 0%, #000000 100%);
             color: white;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
+            min-height: 100vh;
             margin: 0;
+            padding: 40px 20px;
         }
+
         .container {
             width: 100%;
             max-width: 400px;
             text-align: center;
         }
-        .logo {
-            width: 100px;
-            height: 100px;
+
+        /* Espaço para sua Logo */
+        .profile-img {
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            border: 2px solid #8A2BE2; /* Roxo Camisa 9 */
-            margin-bottom: 20px;
-        }
-        h1 { font-size: 1.5rem; margin-bottom: 10px; }
-        p { font-size: 0.9rem; color: #aaa; margin-bottom: 30px; }
-        .link {
-            display: block;
-            background-color: transparent;
-            color: white;
-            border: 2px solid #8A2BE2;
-            padding: 15px;
+            border: 3px solid var(--primary-color);
             margin-bottom: 15px;
-            text-decoration: none;
-            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+            object-fit: cover;
+        }
+
+        h1 { 
+            font-size: 1.8rem; 
+            margin-bottom: 5px; 
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .badge {
+            background: var(--primary-color);
+            font-size: 0.7rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
             font-weight: bold;
-            transition: 0.3s;
+            vertical-align: middle;
         }
+
+        p { 
+            font-size: 0.95rem; 
+            color: #b3b3b3; 
+            margin-bottom: 35px; 
+            font-weight: 300;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 18px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
         .link:hover {
-            background-color: #8A2BE2;
-            color: black;
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+            background-color: #222;
         }
-        .whatsapp { background-color: #25D366; border-color: #25D366; color: white; }
-        .whatsapp:hover { background-color: #128C7E; border-color: #128C7E; color: white; }
+
+        .whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            border: none;
+        }
+
+        .whatsapp:hover {
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>CAMISA 9 👑</h1>
-        <p>Futebol & Streetwear | Os melhores mantos estão aqui.</p>
+        <img src="https://img.freepik.com/vetores-premium/logotipo-da-coroa-real-luxo-vintage_1057-257.jpg" alt="Camisa 9 Logo" class="profile-img">
+        
+        <h1>CAMISA 9 <span class="badge">Oficial</span></h1>
+        <p>A elite das camisas tailandesas 1.1 ⚽🔥</p>
 
-        <a href="COLOQUE_AQUI_O_LINK_DO_SEU_CATALOGO" class="link">📄 CONFIRA O CATÁLOGO (+3.000 Modelos)</a>
+        <a href="LINK_DO_SEU_CATALOGO" class="link">📂 CATÁLOGO COMPLETO (+3.000)</a>
         
-        <a href="https://wa.me/5521979604258?text=Acabei%20de%20ver%20o%20seu%20cat%C3%A1logo%20e%20quero%20adquirir%20o%20meu%20manto!" class="link whatsapp">📲 CHAMA NO WHATSAPP (Faça seu Pedido)</a>
+        <a href="https://wa.me/5521979604258" class="link whatsapp">💬 CHAMAR NO WHATSAPP</a>
         
-        <a href="https://www.instagram.com/camisa9.street" class="link">📸 SEGUE NO INSTAGRAM</a>
+        <a href="https://www.instagram.com/camisa9.street" class="link">📸 INSTAGRAM DA LOJA</a>
+
+        <div class="footer">
+            Camisa 9 - Futebol & Streetwear
+        </div>
     </div>
 </body>
 </html>
